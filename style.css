@@ -1,0 +1,15 @@
+p {
+    background-color: maroon;
+}
+
+.blue_overline_text {
+    color: blue;
+    text-decoration: overline;
+    text-decoration-color: green;
+}
+
+#red_underline_text {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: cyan;
+}
