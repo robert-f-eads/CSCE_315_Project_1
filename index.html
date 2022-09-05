@@ -12,11 +12,11 @@
     <body onload="getDate()">
         <!-- Navigation -->
         <div id="navbar" class="navbar-container">
-            <a style="font-size: 2rem; background: none;" onclick="navClose()">&times;</a> <!-- FIXME -->
-            <a>About Me</a>
-            <a>Technical Portfoilo</a>
-            <a>Qualifications</a>
-            <a>Service</a>
+            <span class="close-button" onclick="navClose()">&times;</span>
+            <a href="#head">About Me</a>
+            <a href="#tech">Technical Portfoilo</a>
+            <a href="#qual">Qualifications</a>
+            <a href="#serv">Service</a>
             <button>Switch Style</button>
         </div>
         <span class="open-button" onclick="navOpen()">&#9776;</span>
@@ -24,7 +24,7 @@
 
         <!-- Landing -->
             <!-- Heading -->
-            <div class="heading-container">
+            <div id="head" class="heading-container">
                 <p>The portfolio site of</p>
                 <h1>Robert Fisher Eads</h1>
                 <div class="social-links-header-container">
@@ -49,7 +49,7 @@
 
 
         <!-- Technical Portfolio -->
-        <div class="dark-box">
+        <div id="tech" class="dark-box">
             <h2 class="section-title">Technical Portfolio</h2>
 
             <div class="technical-project">
@@ -116,7 +116,7 @@
         </div>
 
         <!-- Qualifications Section-->
-        <h2 class="section-title">Qualifications</h2>
+        <h2 id="qual" class="section-title">Qualifications</h2>
         <div class="qualif-containter">
             <div class="qaulif-resume-container">
                 <a href="Robert_Eads_Resume.pdf" target="_blank">Resume</a>
@@ -237,7 +237,7 @@
         </div>
 
         <!-- Service Section -->
-        <div class="dark-box">
+        <div id="serv" class="dark-box">
             <h2 class="section-title">Service to my Community</h2>
             <div class="service-project">
                 <div class="service-project-header">

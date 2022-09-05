@@ -1,6 +1,6 @@
 //Side Navbar
 function navOpen() {
-    document.getElementById("navbar").style.width = "10rem";
+    document.getElementById("navbar").style.width = "15rem";
 }
 
 function navClose() {
