@@ -1,15 +1,113 @@
-.a {
-    background-color: maroon;
+/* Overall */
+HTML {
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
 }
 
-.blue_overline_text {
-    color: blue;
-    text-decoration: overline;
-    text-decoration-color: green;
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
 }
 
-#red_underline_text {
-    color: red;
-    text-decoration: underline;
-    text-decoration-color: cyan;
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.dark-box {
+    background-color: #EAEAEA;
+    padding-top: .5rem;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    color: #500000;
+    font-size: 2rem;
+}
+
+
+
+/* Landing */
+.heading {
+    color: white;
+    text-align: center;
+    background: url("images/Zachry_Engineering_Education_Complex.jpg");
+    z-index: -1;
+    height: 62vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 5rem;
+    margin: 0 0 2rem 0;
+}
+
+.heading p {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.heading span {
+    font-size: 8rem;
+}
+
+.social-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social-links-header {
+    margin: 0 1.5rem;
+}
+
+#github-header {
+    height: 3rem;
+    width: 3rem;
+}
+
+#linkedin-header {
+    height: 3rem;
+    width: 3.5rem;
+}
+
+#email-header {
+    height: 4rem;
+    width: 4rem;
+}
+
+.about-body {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.about-body img {
+    height: 15rem;
+    width: 15rem;
+    margin-left: 5rem;
+}
+
+.about-body p {
+    max-width: 30vw;
+    margin-left: 5rem;
+}
+
+
+/* Technical */
+
+
+/* Qualifications */
+
+
+/* Service */
+
+
+/* Footer */
