@@ -53,6 +53,7 @@ a {
     border-radius: 5px;
 }
 
+
 /* Landing */
 .heading-container {
     color: white;
@@ -76,11 +77,7 @@ a {
     margin-bottom: .5rem;
 }
 
-.heading-container span {
-    font-size: 8rem;
-}
-
-.social-links-container {
+.social-links-header-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,6 +156,7 @@ a {
     margin-right: .5rem;
 }
 
+
 /* Qualifications */
 .qualif-containter {
     display: flex;
@@ -177,7 +175,7 @@ a {
     margin-top: 2rem;
 }
 
-.qaulif-resume-container button {
+.qaulif-resume-container a {
     background-color: transparent;
     font-weight: bold;
     color: #500000;
@@ -186,9 +184,10 @@ a {
     border-radius: .25rem;
     cursor: pointer;
     font-size: 1.5rem;
+    padding: .25rem;
 }
 
-.qaulif-resume-container button:hover {
+.qaulif-resume-container a:hover {
     color: black;
     filter: drop-shadow(2px 2px 2px gray);
 }
@@ -230,17 +229,94 @@ a {
     height: 10px;
     width: 10px;
     position: relative;
-    margin-left: 5px;
+    margin-left: 3px;
     vertical-align: middle;
     background-color: #500000;
     border-radius: 25%;
     display: inline-block;
+
 }
 
 
-
-
 /* Service */
+.service-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.service-project-header {
+    width: 12vw;
+    margin: 0 5rem;
+}
+
+.service-project-header h3 {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    font-weight: 1000;
+}
+
+.service-project-header p {
+    margin-top: 0;
+}
+
+.service-project-description {
+    max-width: 30vw;
+    text-align: justify;
+}
+
+.service-project-links {
+    width: 5rem;
+    margin-right: .5rem;
+}
 
 
 /* Footer */
+.footer-container {
+    color: #500000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.footer-container p {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.footer-text-container {
+    margin: 1.5rem 0;
+}
+
+.social-links-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .75rem;
+}
+
+.social-links-footer {
+    margin: 0 1.5rem;
+}
+
+#github-footer {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#linkedin-footer {
+    height: 2.5rem;
+    width: 3rem;
+}
+
+#email-footer {
+    height: 3.5rem;
+    width: 3.5rem;
+}
