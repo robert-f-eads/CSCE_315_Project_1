@@ -2,20 +2,23 @@
 <hmtl>
     <head>
         <link rel="stylesheet" href="style-1.css">
+        <script src="scripts.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>Portfolio - Robert Eads</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
+
     <body>
         <!-- Navigation -->
-        <div>
-            <a>x</a>
+        <div id="navbar" class="navbar-container">
+            <a style="font-size: 2rem; background: none;" onclick="navClose()">&times;</a> <!-- FIXME -->
             <a>About Me</a>
             <a>Technical Portfoilo</a>
             <a>Qualifications</a>
             <a>Service</a>
             <button>Switch Style</button>
         </div>
+        <span class="open-button" onclick="navOpen()">&#9776;</span>
 
 
         <!-- Landing -->
@@ -30,6 +33,7 @@
                 </div>
             </div>
 
+
             <!-- About Me -->
             <h2 class="section-title">About Me</h2>
             <div class="about-body">
@@ -41,6 +45,7 @@
                     running, playing basketball, and listening to music.
                 </p>
             </div>
+            
 
 
         <!-- Technical Portfolio -->
@@ -199,13 +204,6 @@
         </div>
 
         <!-- Footer -->
-        <ul>
-            <li>About Me</li>
-            <li>Technical Portfoilo</li>
-            <li>Qualifications</li>
-            <li>Service</li>
-        </ul>
-
         <p>The portfoilo site of</p>
         <h1>Robert Fisher Eads</h1>
         <div>
