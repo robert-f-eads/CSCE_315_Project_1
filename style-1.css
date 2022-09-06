@@ -226,7 +226,6 @@ a {
 }
 
 .qaulif-resume-container a:hover {
-    color: black;
     filter: drop-shadow(2px 2px 2px gray);
 }
 
