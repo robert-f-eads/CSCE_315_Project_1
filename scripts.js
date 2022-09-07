@@ -17,3 +17,7 @@ function getDate() {
 
 
 //Style Switching
+function styleSwitch() {
+    let style = document.getElementById("styling");
+    style.getAttribute("href").substring(6,7) == 1 ? style.setAttribute("href","style-2.css") : style.setAttribute("href","style-1.css");
+}
