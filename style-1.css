@@ -13,7 +13,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: white
+    color: white;
 }
 
 .dark-box {
@@ -29,6 +29,17 @@ a {
     font-size: 2rem;
 }
 
+img:hover {
+    animation: wiggle 0.4s;
+}
+
+#propic:hover {
+    animation: none;
+}
+
+.button-tab {
+    display: none;
+}
 
 /* Navigation */
 .open-button {
@@ -126,6 +137,10 @@ a {
     margin: 0 1.5rem;
 }
 
+.social-links-header:hover {
+    animation: wiggle 0.4s;
+}
+
 #github-header {
     height: 3rem;
     width: 3rem;
@@ -193,10 +208,6 @@ a {
 .tech-project-links {
     width: 2.5rem;
     margin-right: .5rem;
-}
-
-#tech-button {
-    display: none;
 }
 
 
@@ -278,10 +289,6 @@ a {
     display: inline-block;
 }
 
-#qual-button {
-    display: none;
-}
-
 
 /* Service */
 .service-project {
@@ -314,10 +321,6 @@ a {
 .service-project-links {
     width: 5rem;
     margin-right: .5rem;
-}
-
-#serv-button {
-    display: none;
 }
 
 
@@ -373,4 +376,15 @@ a {
 #instagram-footer {
     height: 3rem;
     width: 3rem;
+}
+
+
+/* animations */
+@keyframes wiggle {
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
 }

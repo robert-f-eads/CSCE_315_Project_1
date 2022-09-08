@@ -1,3 +1,4 @@
+/* Overall */
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -8,13 +9,26 @@ body {
     margin: 0;
 }
 
+.slide-page {
+    overflow: hidden;
+    width: 0;
+    transition: 1s;
+    z-index: 2;
+    position: absolute;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 95vh;
+    top: 2.5vh;
+}
+
+
 /* Navigation */
-.open-button, .close-button {
+.open-button, .navbar-container, .close-button {
     display: none;
 }
 
 .button-tab {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     font-size: 1.25rem;
     border: none;
@@ -22,31 +36,53 @@ body {
     border-bottom-right-radius: .5rem;
     background-color: #500000;
     color: white;
-    width: 9rem;
-    height: 3rem;
+    width: 9vw;
+    height: 5.5vh;
     cursor: pointer;
     transition: .3s;
+    text-align: end;
+    padding-right: .5rem;
 }
 
 .button-tab:hover {
-    width: 12rem;
+    width: 11vw;
 }
 
+.open {
+    transform: translateX(89vw);
+    width: 10vw;
+    transition: 1s;
+    
+}
+.open:hover {
+    width: 10vw;
+}
+
+.close {
+    transform: translateX(0vw);
+    width: 9vw;
+    transition: 1s;
+}
 
 #tech-button {
-    top: 5rem;
+    top: 5vh;
 }
 
 #qual-button {
-    top: 9rem;
+    top: 11.5vh;
 }
 
 #serv-button {
-    top: 13rem;
+    top: 18vh;
 }
 
+#styleswitch {
+    bottom: 8.5vh;
+}
 
-
+#htmlonly {
+    bottom: 2vh;
+}
 
 
 /* Landing */
@@ -55,7 +91,6 @@ body {
     text-align: justify;
     left: 25vw;
     top: 25vh;
-    
 }
 
 .heading-container {
@@ -152,54 +187,32 @@ body {
 }
 
 /* Technical */
-
-
-
-/* Qualifications */
-
-
-
-/* Service */
-
-
-
-
-
-
-/* Testing */
 #tech {
-    background-color: blue;
-    overflow: hidden;
-    width: 0;
-    transition: 1s;
-    z-index: 1;
-    position: absolute;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    background-color: white;
+    
 }
 
 #tech p {
     width: 90vw;
 }
 
+
+/* Qualifications */
 #qual {
     background-color: red;
-    overflow: hidden;
-    width: 0;
-    transition: 1s;
-    z-index: 1;
-    position: absolute;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+
 }
 
+
+/* Service */
 #serv {
     background-color: white;
-    overflow: hidden;
-    width: 0;
-    transition: 1s;
-    z-index: 1;
-    position: absolute;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+
 }
+
+
+
+
+/* Testing */
+
+

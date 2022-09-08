@@ -1,4 +1,4 @@
-//Side Navbar
+//Style 1 - Side Navbar
 function navOpen() {
     document.getElementById("navbar").style.width = "15rem";
 }
@@ -7,12 +7,22 @@ function navClose() {
     document.getElementById("navbar").style.width = "0";
 }
 
-//Open pages
+//Style 2 - Slide open tabs
 function openPage(title) {
-    let tabs = ["tech", "qual", "serv"]
-    for(let tab of tabs) {
-        tab == title ? document.getElementById(tab).style.width = "90vw" : document.getElementById(tab).style.width = "0";
+    let section_width = document.getElementById(title).style.width;
+    if(section_width == 0 || section_width == "0vw") {
+        document.getElementById(title).style.width = "92vw";
+        document.getElementById(title + "-button").classList.add("open");
     }
+    else{
+        document.getElementById(title).style.width = "0vw";
+        document.getElementById(title + "-button").classList.remove("open");
+        document.getElementById(title + "-button").classList.add("close");
+        setTimeout(() => {
+            document.getElementById(title + "-button").classList.remove("close");
+        }, 1000);      
+    }
+
 }
 
 //Date for copyright
@@ -42,7 +52,7 @@ window.onload = function(){
     getDate();
 }
 
-//Fixing div widths
+//Fixing div widths after style change
 function fixWidth(num) {
     if(num == 1) {
         document.getElementById("tech").style.width = "0";
@@ -55,7 +65,5 @@ function fixWidth(num) {
         document.getElementById("serv").style.width = "100vw";
         document.getElementById("navbar").style.width = "0";
     }
-
 }
-
 

@@ -26,36 +26,34 @@
 
         <!-- Landing -->
             <!-- Heading -->
-            <div class="spash-page">
-                <div id="head" class="heading-container">
-                    <p>The portfolio site of</p>
-                    <h1>Robert Fisher Eads</h1>
-                    <div class="social-links-header-container">
-                        <a href="https://github.com/RobertEads" target="_blank"><img id="github-header" class="social-links-header" src="images/GitHub_Logo_Light.png" alt="Find me on GitHub"></a>
-                        <a href="https://www.linkedin.com/in/robert-eads" target="_blank"><img id="linkedin-header" class="social-links-header" src="images/LinkedIn_Logo_Light.png" alt="Find me on LinkedIn"></a>
-                        <a href="mailto:robert.f.eads@tamu.edu" target="_blank"><img id="email-header" class="social-links-header" src="images/Gmail_Logo_Light.png" alt="Email Me"></a>
-                    </div>
-                </div>
-
-                <!-- About Me -->
-                <h2 id="about" class="section-title">About Me</h2>
-                <div class="about-body">
-                    <img src="images/Profile_Picture_Robert_Eads.png">
-                    <p> An active computer science apprentice at Texas A&M University in my junior year of college. 
-                        I'm a dedicated developer who enjoys learning new languages and experimenting with unfamiliar technologies. 
-                        Currently exploring different facets of mixed reality and am looking to gain experience in the field of 
-                        software engineering or virtual reality development. I whole heartly embrace Texas culture and am fond of 
-                        running, playing basketball, and listening to music.
-                    </p>
+        <div class="spash-page">
+            <div id="head" class="heading-container">
+                <p>The portfolio site of</p>
+                <h1>Robert Fisher Eads</h1>
+                <div class="social-links-header-container">
+                    <a href="https://github.com/RobertEads" target="_blank"><img id="github-header" class="social-links-header" src="images/GitHub_Logo_Light.png" alt="Find me on GitHub"></a>
+                    <a href="https://www.linkedin.com/in/robert-eads" target="_blank"><img id="linkedin-header" class="social-links-header" src="images/LinkedIn_Logo_Light.png" alt="Find me on LinkedIn"></a>
+                    <a href="mailto:robert.f.eads@tamu.edu" target="_blank"><img id="email-header" class="social-links-header" src="images/Gmail_Logo_Light.png" alt="Email Me"></a>
                 </div>
             </div>
 
+            <!-- About Me -->
+            <h2 id="about" class="section-title">About Me</h2>
+            <div class="about-body">
+                <img id="propic" src="images/Profile_Picture_Robert_Eads.png">
+                <p> An active computer science apprentice at Texas A&M University in my junior year of college. 
+                    I'm a dedicated developer who enjoys learning new languages and experimenting with unfamiliar technologies. 
+                    Currently exploring different facets of mixed reality and am looking to gain experience in the field of 
+                    software engineering or virtual reality development. I whole heartly embrace Texas culture and am fond of 
+                    running, playing basketball, and listening to music.
+                </p>
+            </div>
+        </div>
+
 
         <!-- Technical Portfolio -->
-        
         <button id="tech-button" class="button-tab" onclick="openPage('tech')">Technical </button>
-        
-        <div id="tech" class="dark-box">
+        <div id="tech" class="dark-box slide-page">
             <h2 class="section-title">Technical Portfolio</h2>
 
             <div class="technical-project">
@@ -124,7 +122,7 @@
 
         <!-- Qualifications Section-->
         <button id="qual-button" class="button-tab" onclick="openPage('qual')">Qualifications</button>
-        <div id="qual">
+        <div id="qual" class="slide-page">
             <h2 class="section-title">Qualifications</h2>
             <div class="qualif-containter">
                 <div class="qaulif-resume-container">
@@ -250,7 +248,7 @@
         <!-- Service Section -->
         <button id="serv-button" class="button-tab" onclick="openPage('serv')">Service</button>
 
-        <div id="serv" class="dark-box">
+        <div id="serv" class="dark-box slide-page">
             <h2 class="section-title">Service to my Community</h2>
             <div class="service-project">
                 <div class="service-project-header">
@@ -306,6 +304,11 @@
                 <a href="https://www.instagram.com/robert.eads/" target="_blank"><img id="instagram-footer" class="social-links-footer" src="images/Instagram_Logo_Dark.png" alt="Find me on Instagram"></a>
             </div>
              <p id="copyright"><i>&copy; Robert Eads</i> <i id="current">sdf</i></p>
+        </div>
+
+        <div>
+            <button id="styleswitch" class="button-tab" onclick="styleSwitch()">Switch Style</button>
+            <button id="htmlonly" class="button-tab" onclick="window.location.href='html-only.html'">HTML Only</button>
         </div>
 
     </body>
