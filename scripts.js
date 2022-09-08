@@ -7,6 +7,13 @@ function navClose() {
     document.getElementById("navbar").style.width = "0";
 }
 
+//Open pages
+function openPage(title) {
+    let tabs = ["tech", "qual", "serv"]
+    for(let tab of tabs) {
+        tab == title ? document.getElementById(tab).style.width = "90vw" : document.getElementById(tab).style.width = "0";
+    }
+}
 
 //Date for copyright
 function getDate() {
@@ -15,9 +22,40 @@ function getDate() {
     document.getElementById("current").innerHTML = year;    
 }
 
-
 //Style Switching
 function styleSwitch() {
-    let style = document.getElementById("styling");
-    style.getAttribute("href").substring(6,7) == 1 ? style.setAttribute("href","style-2.css") : style.setAttribute("href","style-1.css");
+    let new_style;
+    //Choosing opposite style sheet
+    let curr_num = document.getElementById("styling").getAttribute("href").substring(6,7) 
+    curr_num == 1 ? new_style = "style-2.css" : new_style = "style-1.css";
+    //Updating and saving style sheet
+    document.getElementById("styling").setAttribute("href", new_style);
+    fixWidth(curr_num);
+    localStorage.setItem("stored_style", new_style);
 }
+
+//Holding style after refresh
+window.onload = function(){ 
+    //Load correct style sheet after refresh
+    document.getElementById("styling").setAttribute("href", localStorage.getItem("stored_style"));
+    //Getting and setting proper date for copyright 
+    getDate();
+}
+
+//Fixing div widths
+function fixWidth(num) {
+    if(num == 1) {
+        document.getElementById("tech").style.width = "0";
+        document.getElementById("qual").style.width = "0";
+        document.getElementById("serv").style.width = "0";
+    }
+    else {
+        document.getElementById("tech").style.width = "100vw";
+        document.getElementById("qual").style.width = "100vw";
+        document.getElementById("serv").style.width = "100vw";
+        document.getElementById("navbar").style.width = "0";
+    }
+
+}
+
+

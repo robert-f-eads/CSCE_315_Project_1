@@ -60,6 +60,7 @@ a {
     font-size: 1.5rem;
     margin: 1rem;
     display: block;
+    width: 15rem;
 }
 
 .navbar-container button {
@@ -67,7 +68,7 @@ a {
     color: white;
     border: .3rem solid white;
     border-radius: .25rem;
-    width: 75%;
+    width: 11.25rem;
     font-size: 1.25rem;
     margin: 2rem 0 0 .9rem;
     cursor: pointer;
@@ -194,6 +195,10 @@ a {
     margin-right: .5rem;
 }
 
+#tech-button {
+    display: none;
+}
+
 
 /* Qualifications */
 .qualif-containter {
@@ -271,7 +276,10 @@ a {
     background-color: #500000;
     border-radius: 25%;
     display: inline-block;
+}
 
+#qual-button {
+    display: none;
 }
 
 
@@ -306,6 +314,10 @@ a {
 .service-project-links {
     width: 5rem;
     margin-right: .5rem;
+}
+
+#serv-button {
+    display: none;
 }
 
 

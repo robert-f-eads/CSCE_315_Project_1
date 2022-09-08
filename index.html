@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <hmtl>
     <head>
-        <link id="styling" rel="stylesheet" href="style-1.css">
+        <link id="styling" rel="stylesheet" href="style-2.css">
         <script src="scripts.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>Portfolio - Robert Eads</title>
@@ -9,7 +9,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </head>
 
-    <body onload="getDate()">
+    <body>
         <!-- Navigation -->
         <div id="navbar" class="navbar-container">
             <span class="close-button" onclick="navClose()">&times;</span>
@@ -26,31 +26,35 @@
 
         <!-- Landing -->
             <!-- Heading -->
-            <div id="head" class="heading-container">
-                <p>The portfolio site of</p>
-                <h1>Robert Fisher Eads</h1>
-                <div class="social-links-header-container">
-                    <a href="https://github.com/RobertEads" target="_blank"><img id="github-header" class="social-links-header" src="images/GitHub_Logo_Light.png" alt="Find me on GitHub"></a>
-                    <a href="https://www.linkedin.com/in/robert-eads" target="_blank"><img id="linkedin-header" class="social-links-header" src="images/LinkedIn_Logo_Light.png" alt="Find me on LinkedIn"></a>
-                    <a href="mailto:robert.f.eads@tamu.edu" target="_blank"><img id="email-header" class="social-links-header" src="images/Gmail_Logo_Light.png" alt="Email Me"></a>
+            <div class="spash-page">
+                <div id="head" class="heading-container">
+                    <p>The portfolio site of</p>
+                    <h1>Robert Fisher Eads</h1>
+                    <div class="social-links-header-container">
+                        <a href="https://github.com/RobertEads" target="_blank"><img id="github-header" class="social-links-header" src="images/GitHub_Logo_Light.png" alt="Find me on GitHub"></a>
+                        <a href="https://www.linkedin.com/in/robert-eads" target="_blank"><img id="linkedin-header" class="social-links-header" src="images/LinkedIn_Logo_Light.png" alt="Find me on LinkedIn"></a>
+                        <a href="mailto:robert.f.eads@tamu.edu" target="_blank"><img id="email-header" class="social-links-header" src="images/Gmail_Logo_Light.png" alt="Email Me"></a>
+                    </div>
+                </div>
+
+                <!-- About Me -->
+                <h2 id="about" class="section-title">About Me</h2>
+                <div class="about-body">
+                    <img src="images/Profile_Picture_Robert_Eads.png">
+                    <p> An active computer science apprentice at Texas A&M University in my junior year of college. 
+                        I'm a dedicated developer who enjoys learning new languages and experimenting with unfamiliar technologies. 
+                        Currently exploring different facets of mixed reality and am looking to gain experience in the field of 
+                        software engineering or virtual reality development. I whole heartly embrace Texas culture and am fond of 
+                        running, playing basketball, and listening to music.
+                    </p>
                 </div>
             </div>
 
-            <!-- About Me -->
-            <h2 class="section-title">About Me</h2>
-            <div class="about-body">
-                <img src="images/Profile_Picture_Robert_Eads.png">
-                <p> An active computer science apprentice at Texas A&M University in my junior year of college. 
-                    I'm a dedicated developer who enjoys learning new languages and experimenting with unfamiliar technologies. 
-                    Currently exploring different facets of mixed reality and am looking to gain experience in the field of 
-                    software engineering or virtual reality development. I whole heartly embrace Texas culture and am fond of 
-                    running, playing basketball, and listening to music.
-                </p>
-            </div>
-            
-
 
         <!-- Technical Portfolio -->
+        
+        <button id="tech-button" class="button-tab" onclick="openPage('tech')">Technical </button>
+        
         <div id="tech" class="dark-box">
             <h2 class="section-title">Technical Portfolio</h2>
 
@@ -117,128 +121,135 @@
             </div>
         </div>
 
+
         <!-- Qualifications Section-->
-        <h2 id="qual" class="section-title">Qualifications</h2>
-        <div class="qualif-containter">
-            <div class="qaulif-resume-container">
-                <a href="Robert_Eads_Resume.pdf" target="_blank">Resume</a>
-            </div>
-            <div class="qualif-about-container">
-                <h3> Why Computer Science?</h3>
-                <p>The areas of the computer science field that interest me the most are mixed reality and artificial 
-                    intelligence/machine learning. These technologies, along with coding from an elementary school age,  
-                    are the things that got me hooked and pushed me towards becoming a computer science major in the first place.
-                </p>
-                <p> I got my first virtual reality headset sophomore year of high school and I have loved the technology ever since. 
-                    While most people I showed it to only saw it as a toy that I could play video games with, I quickly realized it could 
-                    be used for so much more. With the fields of medical, automotive, and architecture moving towards a more 
-                    technology-driven future, I thought these were just a few of the industries that mixed reality could be used in a 
-                    productive and business-oriented manner. I was fortunate enough to intern at General Motors, working on a virtual 
-                    reality application, over this past summer and got to see just one of the many uses for virtual reality and augmented 
-                    reality that General Motors has in store for the future. The older I get, the more areas I find that could benefit 
-                    from the technology, and the more excited I get for what is to come.
-                </p>
-                <p> Machine learning & artificial intelligence is the other big area of computer science that draws my interest the 
-                    most. Watching Iron Man as a kid and seeing JARVIS, made my mind run wild. Having a virtual assistant that could 
-                    do all that by simply uttering a phrase gave me a hunger for that power as a kid. As I grew up, I realized 
-                    technology like that is a little farther out than will be attainable in the near future, but it gives me an 
-                    ultimate goal to contribute to a system that may one day create a JARVIS-like AI to intelligently manage our 
-                    homes and our lives.
-                </p>
-            </div>
-            <div class="qualif-skills-container">
-                <h3>Skills</h3>
-                <div class="skills-item">    
-                    <p>Python</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+        <button id="qual-button" class="button-tab" onclick="openPage('qual')">Qualifications</button>
+        <div id="qual">
+            <h2 class="section-title">Qualifications</h2>
+            <div class="qualif-containter">
+                <div class="qaulif-resume-container">
+                    <a href="Robert_Eads_Resume.pdf" target="_blank">Resume</a>
                 </div>
-                <div class="skills-item">
-                    <p>C++</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <div class="qualif-about-container">
+                    <h3> Why Computer Science?</h3>
+                    <p>The areas of the computer science field that interest me the most are mixed reality and artificial 
+                        intelligence/machine learning. These technologies, along with coding from an elementary school age,  
+                        are the things that got me hooked and pushed me towards becoming a computer science major in the first place.
+                    </p>
+                    <p> I got my first virtual reality headset sophomore year of high school and I have loved the technology ever since. 
+                        While most people I showed it to only saw it as a toy that I could play video games with, I quickly realized it could 
+                        be used for so much more. With the fields of medical, automotive, and architecture moving towards a more 
+                        technology-driven future, I thought these were just a few of the industries that mixed reality could be used in a 
+                        productive and business-oriented manner. I was fortunate enough to intern at General Motors, working on a virtual 
+                        reality application, over this past summer and got to see just one of the many uses for virtual reality and augmented 
+                        reality that General Motors has in store for the future. The older I get, the more areas I find that could benefit 
+                        from the technology, and the more excited I get for what is to come.
+                    </p>
+                    <p> Machine learning & artificial intelligence is the other big area of computer science that draws my interest the 
+                        most. Watching Iron Man as a kid and seeing JARVIS, made my mind run wild. Having a virtual assistant that could 
+                        do all that by simply uttering a phrase gave me a hunger for that power as a kid. As I grew up, I realized 
+                        technology like that is a little farther out than will be attainable in the near future, but it gives me an 
+                        ultimate goal to contribute to a system that may one day create a JARVIS-like AI to intelligently manage our 
+                        homes and our lives.
+                    </p>
                 </div>
-                <div class="skills-item">
-                    <p>Unreal Engine</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="qualif-skills-container">
+                    <h3>Skills</h3>
+                    <div class="skills-item">    
+                        <p>Python</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>Git</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
-                        <span></span>
+                    <div class="skills-item">
+                        <p>C++</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>HTML</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
+                    <div class="skills-item">
+                        <p>Unreal Engine</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>CSS</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
+                    <div class="skills-item">
+                        <p>Git</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>React JS</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
+                    <div class="skills-item">
+                        <p>HTML</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>Linux Systems</p>
-                    <div>
-                        <span ></span>
-                        <span></span>
+                    <div class="skills-item">
+                        <p>CSS</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>Unity Engine</p>
-                    <div>
-                        <span ></span>
+                    <div class="skills-item">
+                        <p>React JS</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>Java</p>
-                    <div>
-                        <span ></span>
+                    <div class="skills-item">
+                        <p>Linux Systems</p>
+                        <div>
+                            <span ></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p>PostgreSQL</p>
-                    <div>
-                        <span ></span>
+                    <div class="skills-item">
+                        <p>Unity Engine</p>
+                        <div>
+                            <span ></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skills-item">
-                    <p >VMware vSphere/ESXI</p>
-                    <div>
-                        <span ></span>
+                    <div class="skills-item">
+                        <p>Java</p>
+                        <div>
+                            <span ></span>
+                        </div>
+                    </div>
+                    <div class="skills-item">
+                        <p>PostgreSQL</p>
+                        <div>
+                            <span ></span>
+                        </div>
+                    </div>
+                    <div class="skills-item">
+                        <p >VMware vSphere/ESXI</p>
+                        <div>
+                            <span ></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
         <!-- Service Section -->
+        <button id="serv-button" class="button-tab" onclick="openPage('serv')">Service</button>
+
         <div id="serv" class="dark-box">
             <h2 class="section-title">Service to my Community</h2>
             <div class="service-project">
@@ -294,7 +305,7 @@
                 <a href="mailto:robert.f.eads@tamu.edu" target="_blank"><img id="email-footer" class="social-links-footer" src="images/Gmail_Logo_Dark.png" alt="Email Me"></a>
                 <a href="https://www.instagram.com/robert.eads/" target="_blank"><img id="instagram-footer" class="social-links-footer" src="images/Instagram_Logo_Dark.png" alt="Find me on Instagram"></a>
             </div>
-             <p><i>&copy; Robert Eads</i> <i id="current">sdf</i></p>
+             <p id="copyright"><i>&copy; Robert Eads</i> <i id="current">sdf</i></p>
         </div>
 
     </body>
