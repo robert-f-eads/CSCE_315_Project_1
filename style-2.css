@@ -49,6 +49,13 @@ img:hover {
     transition: .15s;
 }
 
+.section-title {
+    font-size: 2rem;
+    font-style: italic;
+    width: 50vw;
+    text-align: center;
+}
+
 
 /* Navigation */
 .open-button, .navbar-container, .close-button {
@@ -222,16 +229,11 @@ img:hover {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    align-items: center;
 }
 
 #tech::-webkit-scrollbar {
     display: none;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
 }
 
 .technical-projects-container {
@@ -314,19 +316,15 @@ img:hover {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    align-items: center;
 }
 
 #serv::-webkit-scrollbar {
     display: none;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
-}
 
-.technical-projects-container {
+.service-projects-container {
     display: grid;
     grid-template-columns: 28rem 28rem;
     justify-content: center;
@@ -375,9 +373,13 @@ img:hover {
 }
 
 .service-project-links {
-    width: 4rem;
+    width: 5rem;
     margin: 0 1rem;
-    margin-top: 6rem;
+    margin-top: 8rem;
+}
+
+#NSA_logo {
+    margin-top: 4rem;
 }
 
 .service-project-description {

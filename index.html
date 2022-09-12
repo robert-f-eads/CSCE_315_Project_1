@@ -55,6 +55,7 @@
         <button id="tech-button" class="button-tab" onclick="openPage('tech')">Technical </button>
         <div id="tech" class="dark-box slide-page">
             <h2 class="section-title">Technical Portfolio</h2>
+
             <div class="technical-projects-container">
                 <div onclick ="rotateCard('tp1')" class="technical-project">
                     <div id="tp1" class="technical-project-inner">
@@ -256,46 +257,54 @@
 
         <!-- Service Section -->
         <button id="serv-button" class="button-tab" onclick="openPage('serv')">Service</button>
-
         <div id="serv" class="dark-box slide-page">
             <h2 class="section-title">Service to my Community</h2>
-            <div class="service-project">
-                <div class="service-project-header">
-                    <h3>National Stuttering Association Educational Paneling </h3>
-                    <a href="https://westutter.org/" target="_blank"><img class="service-project-links" src="images/NSA_Logo_Color.png" alt="View National Stuttering Association here"></a>
-                </div>
-                <div class="service-project-description">
-                    <p> As a stutterer, I panel for classes taught about speech pathology and more specifically stuttering. 
-                    This creates an opportunity for SLPs-in-training (speech-language pathologists) to ask questions and get 
-                    real feedback about their experiences from people who stutter and have gone through speech therapy.
-                    </p>
-                </div>
-            </div>
 
-            <div class="service-project">
-                <div class="service-project-header">
-                    <h3>North Texas Food Bank</h3>
-                    <a href="https://ntfb.org/" target="_blank"><img class="service-project-links" src="images/NTFB_Logo_Color.png" alt="View North Texas Food Bank here"></a>
+            <div class="service-projects-container">
+                <div onclick ="rotateCard('sp1')" class="service-project">
+                    <div id="sp1" class="service-project-inner">
+                        <div class="service-project-header">
+                            <h3>National Stuttering Association Educational Paneling </h3>
+                            <a href="https://westutter.org/" target="_blank"><img id="NSA_logo" class="service-project-links" src="images/NSA_Logo_Color.png" alt="View National Stuttering Association here"></a>
+                        </div>
+                        <div class="service-project-description">
+                            <p> As a stutterer, I panel for classes taught about speech pathology and more specifically stuttering. 
+                            This creates an opportunity for SLPs-in-training (speech-language pathologists) to ask questions and get 
+                            real feedback about their experiences from people who stutter and have gone through speech therapy.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-project-description">
-                    <p> As a volunteer, my responsibilities included packing meal bags, sorting food, and wrapping pallets at the 
-                    North Texas Food Bank (NTFB). The NTFB is a food bank serving the north Texas area and has been my go-to 
-                    volunteer spot for the past 6 years.
-                    </p>
-                </div>
-            </div>
 
-            <div class="service-project">
-                <div class="service-project-header">
-                    <h3>Texas Ramp Project - Dallas Region</h3>
-                    <a href="https://www.texasramps.org/" target="_blank"><img class="service-project-links" src="images/TRP_Logo_Color.png" alt="View Texas Ramp Project here"></a>
+                <div onclick ="rotateCard('sp2')" class="service-project">
+                    <div id="sp2" class="service-project-inner">
+                        <div class="service-project-header">
+                            <h3>North Texas Food Bank</h3>
+                            <a href="https://ntfb.org/" target="_blank"><img class="service-project-links" src="images/NTFB_Logo_Color.png" alt="View North Texas Food Bank here"></a>
+                        </div>
+                        <div class="service-project-description">
+                            <p> As a volunteer, my responsibilities included packing meal bags, sorting food, and wrapping pallets at the 
+                            North Texas Food Bank (NTFB). The NTFB is a food bank serving the north Texas area and has been my go-to 
+                            volunteer spot for the past 6 years.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-project-description">
-                    <p> Volunteering on Saturday mornings with the Dallas chapter of the Texas Ramps Project, I constructed ramp 
-                    floorings and handrails, as well as drilled and screwed into sidewalks and foundations to attach ramps. 
-                    These ramps were for handicapped and wheelchair-bound residents who could not afford ramps but needed 
-                    them to exit and enter their dwellings.
-                    </p>
+
+                <div onclick ="rotateCard('sp3')" class="service-project">
+                    <div id="sp3" class="service-project-inner">
+                        <div class="service-project-header">
+                            <h3>Texas Ramp Project - Dallas Region</h3>
+                            <a href="https://www.texasramps.org/" target="_blank"><img class="service-project-links" src="images/TRP_Logo_Color.png" alt="View Texas Ramp Project here"></a>
+                        </div>
+                        <div class="service-project-description">
+                            <p> Volunteering on Saturday mornings with the Dallas chapter of the Texas Ramps Project, I constructed ramp 
+                            floorings and handrails, as well as drilled and screwed into sidewalks and foundations to attach ramps. 
+                            These ramps were for handicapped and wheelchair-bound residents who could not afford ramps but needed 
+                            them to exit and enter their dwellings.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
