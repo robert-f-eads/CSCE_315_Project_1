@@ -55,76 +55,77 @@
         <button id="tech-button" class="button-tab" onclick="openPage('tech')">Technical </button>
         <div id="tech" class="dark-box slide-page">
             <h2 class="section-title">Technical Portfolio</h2>
-
-            <div class="technical-project">
-                <div class="technical-project-inner">
-                    <div class="technical-project-header">
-                        <h3>Stutter Speak</h3>
-                        <p>May 2021 - August 2021</p>
-                        <div>
-                            <a href="https://github.com/Jableman19/StutterSpeak" target="_blank"><img class="tech-project-links" src="images/GitHub_Logo_Dark.png" alt="View the repository on GitHub"></a>
-                            <a href="https://www.oculus.com/experiences/quest/4159850590802633/" target="_blank"><img class="tech-project-links" src="images/SideQuest_Logo_Dark.png" alt="View the application in App Labs"></a>
-                        </div>    
+            <div class="technical-projects-container">
+                <div onclick ="rotateCard('tp1')" class="technical-project">
+                    <div id="tp1" class="technical-project-inner">
+                        <div class="technical-project-header">
+                            <h3>Stutter Speak</h3>
+                            <p>May 2021 - August 2021</p>
+                            <div>
+                                <a href="https://github.com/Jableman19/StutterSpeak" target="_blank"><img class="tech-project-links" src="images/GitHub_Logo_Dark.png" alt="View the repository on GitHub"></a>
+                                <a href="https://www.oculus.com/experiences/quest/4159850590802633/" target="_blank"><img class="tech-project-links" src="images/SideQuest_Logo_Dark.png" alt="View the application in App Labs"></a>
+                            </div>    
+                        </div>
+                        <div class="technical-project-description">
+                            <p> Developed as a team of two in partnership with a licensed, certified speech-language pathologist, 
+                                Stutter Speak is a VR application built in Unreal Engine 4 using a blend of C++ and Blueprint. 
+                                Designed to help those who stutter improve confidence in their public speaking ability, the application 
+                                puts the user on stage in front of a digital audience to closely simulate the public speaking experience. 
+                                By giving users the ability to self-track stuttering and rate themselves on different aspects of their speech, 
+                                the application can then provide helpful feedback and graphical representations of data to show progress over time. 
+                                Stutter Speak is available for the Oculus Quest 2 via the Oculus App Lab store.
+                            </p>
+                        </div>
                     </div>
-                    <div class="technical-project-description">
-                        <p> Developed as a team of two in partnership with a licensed, certified speech-language pathologist, 
-                            Stutter Speak is a VR application built in Unreal Engine 4 using a blend of C++ and Blueprint. 
-                            Designed to help those who stutter improve confidence in their public speaking ability, the application 
-                            puts the user on stage in front of a digital audience to closely simulate the public speaking experience. 
-                            By giving users the ability to self-track stuttering and rate themselves on different aspects of their speech, 
-                            the application can then provide helpful feedback and graphical representations of data to show progress over time. 
-                            Stutter Speak is available for the Oculus Quest 2 via the Oculus App Lab store.
-                        </p>
+                </div>
+
+                <div onclick ="rotateCard('tp2')" class="technical-project">
+                    <div id="tp2" class="technical-project-inner">
+                        <div class="technical-project-header">
+                            <h3>Morphi Blockchain Consulting</h3>
+                            <p>Feburary 2022 - June 2022</p>
+                        </div>
+                        <div class="technical-project-description">
+                            <p> Picked up as part time work during spring semester of 2022, responsibilities centered on daily communication with 
+                                customers, creating custom requested websites on a project by project basis, and collaborativly coding with 
+                                teammates to create, deploy, and manage custom python bots running connections to a MongoDB database.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick ="rotateCard('tp3')" class="technical-project">
+                    <div id="tp3" class="technical-project-inner">
+                        <div class="technical-project-header">
+                            <h3>Portfolio Website</h3>
+                            <p>July 2021 - August 2021</p>
+                            <a href="https://github.tamu.edu/robert-f-eads/CSCE_315_Project_1" target="_blank"><img class="tech-project-links" src="images/GitHub_Logo_Dark.png" alt="View the repository on GitHub"></a>
+                        </div>
+                        <div class="technical-project-description">
+                            <p> Developed as an assignment for class, this website was coded in HTML, CSS, and Javascript. 
+                                Created with a togglable stylesheet in mind, the website can easy switch between two different looks
+                                with the press of a button.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div onclick ="rotateCard('tp4')" class="technical-project">
+                    <div id="tp4" class="technical-project-inner">
+                        <div class="technical-project-header">
+                            <h3>Saxophone Simulator</h3>
+                            <p>May 2021</p>
+                        </div>
+                        <div class="technical-project-description">
+                            <p> Created with the Unity game engine in C# alongside my parnter Jonah, "Saxo Sim" was taken from concept to 
+                                completion in just over one week. Used as a simple way to gain familiarity with version control and coding in a 
+                                team environment for my partner and I. Design and implimention of the overall UI as well as coding the 
+                                note name display when a sound played was my responsibility.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-           <!-- <div class="technical-project">
-                <div class="technical-project-inner">
-                    <div class="technical-project-header">
-                        <h3>Morphi Blockchain Consulting</h3>
-                        <p>Feburary 2022 - June 2022</p>
-                    </div>
-                    <div class="technical-project-description">
-                        <p> Picked up as part time work during spring semester of 2022, responsibilities centered on daily communication with 
-                            customers, creating custom requested websites on a project by project basis, and collaborativly coding with 
-                            teammates to create, deploy, and manage custom python bots running connections to a MongoDB database.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="technical-project">
-                <div class="technical-project-inner">
-                    <div class="technical-project-header">
-                        <h3>Portfolio Website</h3>
-                        <p>July 2021 - August 2021</p>
-                        <a href="https://github.tamu.edu/robert-f-eads/CSCE_315_Project_1" target="_blank"><img class="tech-project-links" src="images/GitHub_Logo_Dark.png" alt="View the repository on GitHub"></a>
-                    </div>
-                    <div class="technical-project-description">
-                        <p> Developed as an assignment for class, this website was coded in HTML, CSS, and Javascript. 
-                            Created with a togglable stylesheet in mind, the website can easy switch between two different looks
-                            with the press of a button.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="technical-project">
-                <div class="technical-project-inner">
-                    <div class="technical-project-header">
-                        <h3>Saxophone Simulator</h3>
-                        <p>May 2021</p>
-                    </div>
-                    <div class="technical-project-description">
-                        <p> Created with the Unity game engine in C# alongside my parnter Jonah, "Saxo Sim" was taken from concept to 
-                            completion in just over one week. Used as a simple way to gain familiarity with version control and coding in a 
-                            team environment for my partner and I. Design and implimention of the overall UI as well as coding the 
-                            note name display when a sound played was my responsibility.
-                        </p>
-                    </div>
-                </div>
-            </div>-->
         </div>
 
 
