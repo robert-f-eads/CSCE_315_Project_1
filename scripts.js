@@ -25,6 +25,7 @@ function openPage(title) {
 
 }
 
+
 //Date for copyright
 function getDate() {
     const new_date = new Date();

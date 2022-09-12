@@ -34,7 +34,7 @@ body {
     border: none;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
-    background-color: #500000;
+    background-color: #067cb3;
     color: white;
     width: 9vw;
     height: 5.5vh;
@@ -189,13 +189,61 @@ body {
 /* Technical */
 #tech {
     background-color: white;
+    display: flex;
     
 }
 
-#tech p {
-    width: 90vw;
+
+.tech-project-links {
+    width: 2.5rem;
+    margin-right: .5rem;
 }
 
+.technical-project {
+    background-color: transparent;
+    width: 20rem;
+    height: 20rem;
+    margin: 1.5rem;
+}
+
+.technical-project-inner {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.3);
+}
+
+.technical-project:hover .technical-project-inner{
+    transform: rotateY(180deg);
+}
+
+
+.technical-project-header, .technical-project-description {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.technical-project-header {
+    background-color: blueviolet;
+    color: white;
+}
+
+.technical-project-description {
+    background-color: coral;
+    transform:  rotateY(180deg);
+}
+
+.technical-project-description p {
+    width: inherit;
+    height: inherit;
+    color: black;
+}
 
 /* Qualifications */
 #qual {

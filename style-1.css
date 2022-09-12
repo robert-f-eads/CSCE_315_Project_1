@@ -354,6 +354,12 @@ img:hover {
     margin-bottom: .75rem;
 }
 
+.social-links-footer-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .social-links-footer {
     margin: 0 1.5rem;
 }
