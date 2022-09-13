@@ -1,21 +1,24 @@
 /* Theme colors
 --star-command-blue: #067cb3ff; //Lock
 --black: #000000ff; //Lock
---camel: #af9164ff;
---cosmic-latte: #f7f3e3ff;
 --periwinkle-crayola: #bbc2e2ff; //Lock
 */ 
 
 /* Overall */
 html {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-    background: white;
     padding: 0;
     margin: 0;
     color: black;
+}
+
+.background-container {
+    background:linear-gradient(315deg, rgba(242, 244, 243, 1) 20%, rgba(9, 12, 155, 1) 100%);
+    width: 100vw;
+    height: 100vh;
 }
 
 .slide-page {
@@ -28,7 +31,7 @@ body {
     border-bottom-right-radius: 1rem;
     height: 95vh;
     top: 2.5vh;
-    background-color: #bbc2e2ff;
+    background:radial-gradient(circle at 48% 59%, rgba(242, 244, 243, 1) 0%, rgba(9, 12, 155, 1) 100%);
 }
 
 .sliding-page {
@@ -50,7 +53,7 @@ img:hover {
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: italic;
     width: 50vw;
     text-align: center;
@@ -128,8 +131,8 @@ img:hover {
 .spash-page {
     position: absolute;
     text-align: justify;
-    left: 25vw;
-    top: 25vh;
+    right: 32.5vw;
+    top: 5vh;
 }
 
 .heading-container {
@@ -140,18 +143,19 @@ img:hover {
 }
 
 .heading-container h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin: 0 0 2rem 0;
 }
 
 .heading-container p {
     font-size: 1.5rem;
     margin-bottom: .5rem;
+    font-weight: 550;
 }
 
 .about-body {
     display: flex;
-    flex: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
@@ -164,16 +168,21 @@ img:hover {
 .about-body img {
     height: 15rem;
     width: 15rem;
-    margin-left: 5rem;
+    margin: 2rem 0;
 }
 
 .about-body p {
     max-width: 30vw;
-    margin-left: 5rem;
     text-align: justify;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
-#propic:hover {
+#propic {
+    display: none;
+}
+
+#propic_blue:hover {
     transform: scale(1);
 }
 
@@ -187,7 +196,7 @@ img:hover {
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    left: 40vw;
+    right: 38.5vw;
 }
 
 .footer-container h1, .footer-container p {
@@ -228,6 +237,7 @@ img:hover {
 #copyright {
     display: initial;
 }
+
 
 /* Technical */
 #tech {
@@ -555,9 +565,5 @@ img:hover {
     text-align: left;
 }
 
-
-
-
-/* Testing */
 
 

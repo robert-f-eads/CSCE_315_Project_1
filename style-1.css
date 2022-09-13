@@ -182,6 +182,10 @@ img:hover {
     text-align: justify;
 }
 
+#propic_blue {
+    display: none;
+}
+
 
 /* Technical */
 .technical-project {
