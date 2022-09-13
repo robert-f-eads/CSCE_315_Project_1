@@ -41,7 +41,9 @@ function styleSwitch() {
 //Holding style after refresh
 window.onload = function(){ 
     //Load correct style sheet after refresh
-    document.getElementById("styling").setAttribute("href", localStorage.getItem("stored_style"));
+    if(localStorage.getItem("stored_style") != null) {
+        document.getElementById("styling").setAttribute("href", localStorage.getItem("stored_style"));
+    }
     //Getting and setting proper date for copyright 
     getDate();
 }

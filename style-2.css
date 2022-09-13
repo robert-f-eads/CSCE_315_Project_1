@@ -2,6 +2,7 @@
 --star-command-blue: #067cb3ff; //Lock
 --black: #000000ff; //Lock
 --periwinkle-crayola: #bbc2e2ff; //Lock
+--sticky-note-yellow: #EDF7D2 //Lock
 */ 
 
 /* Overall */
@@ -72,7 +73,7 @@ img:hover {
 .button-tab {
     z-index: 1;
     position: absolute;
-    font-size: 1rem;
+    font-size: 1vw;
     border: none;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
@@ -175,7 +176,7 @@ img:hover {
     max-width: 30vw;
     text-align: justify;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.8vh;
 }
 
 #propic {
@@ -314,6 +315,7 @@ img:hover {
     text-align: left;
     font-size: 1.05rem;
 }
+
 
 /* Qualifications */
 #qual {
@@ -490,7 +492,6 @@ img:hover {
     display: none;
 }
 
-
 .service-projects-container {
     display: grid;
     grid-template-columns: 28rem 28rem;
@@ -564,6 +565,3 @@ img:hover {
     margin: 0;
     text-align: left;
 }
-
-
-
