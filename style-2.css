@@ -8,7 +8,7 @@
 
 /* Overall */
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'Courier New', Courier, monospace
 }
 
 body {
@@ -56,6 +56,10 @@ img:hover {
     text-align: center;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* Navigation */
 .open-button, .navbar-container, .close-button {
@@ -65,18 +69,19 @@ img:hover {
 .button-tab {
     z-index: 1;
     position: absolute;
-    font-size: 1.25rem;
+    font-size: 1rem;
     border: none;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
     background-color: #067cb3ff;
     color: white;
-    width: 9vw;
+    width: 9.5vw;
     height: 5.5vh;
     cursor: pointer;
     transition: .7s;
     text-align: end;
     padding-right: .5rem;
+    font-family: 'Courier New', Courier, monospace
 }
 
 .button-tab:hover {
@@ -232,10 +237,6 @@ img:hover {
     align-items: center;
 }
 
-#tech::-webkit-scrollbar {
-    display: none;
-}
-
 .technical-projects-container {
     display: grid;
     grid-template-columns: 28rem 28rem;
@@ -252,13 +253,14 @@ img:hover {
 
 .technical-project-inner {
     position: relative;
-    width: 27.5rem;
-    height: 20rem;
+    width: inherit;
+    height: inherit;
     text-align: center;
     transition: transform .6s;
     transform-style: preserve-3d;
     box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.3);
     cursor: pointer;
+    border-radius: 1rem;
 }
 
 .technical-project-header, .technical-project-description {
@@ -267,10 +269,8 @@ img:hover {
     height: inherit;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-}
-
-.technical-project-header {
     background-color: #EDF7D2;
+    border-radius: 1rem;
 }
 
 .technical-project-header h3 {
@@ -291,23 +291,180 @@ img:hover {
 }
 
 .technical-project-description {
-    background-color: #EDF7D2;
     transform:  rotateY(180deg);
+    overflow-y: scroll;
 }
 
 .technical-project-description p {
     width: inherit - 1rem;
     height: inherit - 1rem;
     color: black;
-    padding: 1rem;
+    padding: 1.25rem;
     margin: 0;
     text-align: left;
+    font-size: 1.05rem;
 }
 
 /* Qualifications */
 #qual {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+}
 
+.qualif-containter {
+    display: grid;
+    grid-template-columns: 30rem 15rem 30rem;
+    justify-content: center;
+    column-gap: 3rem;
+    margin-top: 3rem;
+}
 
+.qualif-about-outer {
+    background-color: transparent;
+    width: 27.5rem;
+    height: 30rem;
+    margin: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.qualif-about-container {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.qualif-about-header, .qualif-about-body {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-color: #EDF7D2;
+    border-radius: 1rem;
+}
+
+.qualif-about-header h3 {
+    padding-top: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 1000;
+}
+
+.qualif-about-body {
+    transform:  rotateY(180deg);
+    overflow-y: scroll;
+}
+
+.qualif-about-body p {
+    width: inherit - 1rem;
+    height: inherit - 1rem;
+    color: black;
+    padding: 1.25rem;
+    margin: 0;
+    text-align: left;
+    font-size: 1.05rem;
+}
+
+.qaulif-resume-container {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+
+.qaulif-resume-container a {
+    text-decoration: none;
+    background-color: #EDF7D2;
+    box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.3);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 1000;
+    color: black;
+}
+
+.qaulif-resume-container a:hover {
+    background-color: #edf7d2c8;
+}
+
+.qualif-skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    width: 27.5rem;
+    height: 30rem;
+    margin: 1rem;
+}
+
+.qualif-skills-container h3 {
+    margin-top: 0;
+}
+
+.qualif-skills-inner {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    text-align: left;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.qualif-skills-header, .qualif-skills-body {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-color: #EDF7D2;
+    border-radius: 1rem;
+}
+
+.qualif-skills-header h3 {
+    padding-top: 3rem;
+    font-size: 1.75rem;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.qualif-skills-body {
+    transform:  rotateY(180deg);
+    overflow-y: scroll;
+}
+
+.qualif-skills-body p {
+    width: inherit - 1rem;
+    height: inherit - 1rem;
+    color: black;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+.skills-item p {
+    margin: .375rem 0;
+}
+
+.skill-level {
+    text-decoration: underline;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
 }
 
 
@@ -347,6 +504,7 @@ img:hover {
     transform-style: preserve-3d;
     box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.3);
     cursor: pointer;
+    border-radius: 1rem;
 }
 
 .service-project-header, .service-project-description {
@@ -355,6 +513,7 @@ img:hover {
     height: inherit;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    border-radius: 1rem;
 }
 
 .service-project-header {

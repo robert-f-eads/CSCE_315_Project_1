@@ -8,6 +8,7 @@ body {
     background-color: white;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -39,10 +40,6 @@ img:hover {
 
 .button-tab {
     display: none;
-}
-
-.style1-width {
-    width: 100vw;
 }
 
 .technical-project-inner, .service-project-inner {
@@ -235,7 +232,7 @@ img:hover {
 
 .qaulif-resume-container {
     text-align: center;
-    margin-top: 2rem;
+    margin: 1.5rem 0;
 }
 
 .qaulif-resume-container a {
@@ -275,6 +272,10 @@ img:hover {
     margin-top: 0;
 }
 
+.skill-level {
+    display: none;
+}
+
 .skills-item {
     display: flex;
     flex-direction: row;
@@ -296,6 +297,10 @@ img:hover {
     background-color: #500000;
     border-radius: 25%;
     display: inline-block;
+}
+
+.indicator-inner, .indicator-outer{
+    visibility: hidden;
 }
 
 

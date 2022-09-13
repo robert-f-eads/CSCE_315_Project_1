@@ -48,9 +48,6 @@ window.onload = function(){
 
 //Fixing div widths after style change
 function fixWidth(num) {
-    document.getElementById("tech").classList.toggle("style1-width");
-    document.getElementById("qual").classList.toggle("style1-width");
-    document.getElementById("serv").classList.toggle("style1-width");
     if(num == 1) {document.getElementById("navbar").style.width = "0";}
 }
 
